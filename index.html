@@ -1,0 +1,522 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silvan Homes, Inc | Custom Home Builder Houston, TX | Luxury Residences</title>
+    <meta name="description" content="Houston's premier custom home builder. Silvan Homes, Inc specializes in luxury residential construction, premium remodeling, and architectural design. Call (832) 831-1656 today.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+      h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+      
+      .scroll-reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .scroll-reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      .faq-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+        opacity: 0;
+      }
+      .faq-item.active .faq-content {
+        max-height: 300px;
+        opacity: 1;
+      }
+      .faq-item.active .faq-icon {
+        transform: rotate(180deg);
+      }
+
+      .bg-luxury {
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1920');
+        background-size: cover;
+        background-position: center;
+      }
+
+      @keyframes pulse-soft {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+      }
+      .btn-pulse {
+        animation: pulse-soft 2s infinite;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-slate-900">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <div id="nav-logo" class="font-bold text-xl tracking-tight text-white transition-colors">
+          SILVAN <span class="text-amber-500">HOMES</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="tel:8328311656" class="flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white px-5 py-2.5 rounded-full font-bold transition-all active:scale-95 shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span class="hidden sm:inline">(832) 831-1656</span>
+            <span class="sm:hidden">Call Now</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen min-h-[700px] flex items-center justify-center text-center px-4 bg-luxury">
+      <div class="container mx-auto z-10">
+        <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-6 leading-tight max-w-5xl mx-auto drop-shadow-2xl">
+          Building Your Vision of Luxury in <span class="text-amber-500">Houston</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-200 mb-10 max-w-2xl mx-auto drop-shadow-lg">
+          Silvan Homes, Inc: Premier Custom Home Builders crafting high-end, bespoke residences across Texas.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:8328311656" class="bg-amber-600 hover:bg-amber-700 text-white text-xl font-bold px-10 py-5 rounded-md transition-all flex items-center justify-center gap-3 shadow-2xl btn-pulse">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Call Now
+          </a>
+          <a href="#services" class="bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/30 text-white text-xl font-bold px-10 py-5 rounded-md transition-all">
+            Our Services
+          </a>
+        </div>
+        <div class="mt-16 flex items-center justify-center gap-10 text-white font-medium flex-wrap opacity-90">
+          <div class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Licensed & Insured
+          </div>
+          <div class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Houston Local
+          </div>
+          <div class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Award Winning
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"></path></svg>
+      </div>
+    </header>
+
+    <!-- Trust Bar -->
+    <div class="bg-slate-50 border-y border-slate-200 py-10">
+      <div class="container mx-auto px-4 grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-amber-600 font-bold text-4xl mb-1">20+</div>
+          <div class="text-slate-500 text-xs uppercase tracking-widest font-bold">Years Experience</div>
+        </div>
+        <div class="text-center">
+          <div class="text-amber-600 font-bold text-4xl mb-1">150+</div>
+          <div class="text-slate-500 text-xs uppercase tracking-widest font-bold">Homes Delivered</div>
+        </div>
+        <div class="text-center">
+          <div class="text-amber-600 font-bold text-4xl mb-1">5.0</div>
+          <div class="text-slate-500 text-xs uppercase tracking-widest font-bold">Star Local Rating</div>
+        </div>
+        <div class="text-center">
+          <div class="text-amber-600 font-bold text-4xl mb-1">100%</div>
+          <div class="text-slate-500 text-xs uppercase tracking-widest font-bold">Quality Guaranteed</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16 scroll-reveal">
+          <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Our Premium Expertise</h2>
+          <div class="w-24 h-1.5 bg-amber-600 mx-auto rounded-full"></div>
+          <p class="mt-8 text-slate-600 max-w-3xl mx-auto text-lg leading-relaxed">
+            From groundbreaking new builds to complex high-end structural renovations, we bring master craftsmanship to every project.
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-10">
+          <!-- Service 1 -->
+          <div class="scroll-reveal bg-white border border-slate-100 p-10 rounded-2xl hover:shadow-2xl transition-all duration-300 group">
+            <div class="w-16 h-16 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center mb-8 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Luxury Custom Homes</h3>
+            <p class="text-slate-600 mb-8 leading-relaxed">Turnkey construction for bespoke residences designed around your lifestyle and architectural preferences.</p>
+            <a href="tel:8328311656" class="text-amber-600 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
+              Discuss Your Project <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+          <!-- Service 2 -->
+          <div class="scroll-reveal bg-white border border-slate-100 p-10 rounded-2xl hover:shadow-2xl transition-all duration-300 group delay-100">
+            <div class="w-16 h-16 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center mb-8 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a2 2 0 0 1 2.83 0l.3.3a2 2 0 0 1 0 2.83l-3.77 3.77a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a2 2 0 0 1 2.83 0l.3.3a2 2 0 0 1 0 2.83l-3.77 3.77a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a2 2 0 0 1 2.83 0l.3.3a2 2 0 0 1 0 2.83l-3.77 3.77a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77"></path><path d="m2 22 5-5"></path><path d="M9.5 14.5 16 8"></path><path d="m17 2 5 5"></path><path d="m3.5 14.5 4 4"></path></svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">High-End Remodeling</h3>
+            <p class="text-slate-600 mb-8 leading-relaxed">Sophisticated renovations and structural additions that increase both aesthetic value and market appraisal.</p>
+            <a href="tel:8328311656" class="text-amber-600 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
+              Explore Options <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+          <!-- Service 3 -->
+          <div class="scroll-reveal bg-white border border-slate-100 p-10 rounded-2xl hover:shadow-2xl transition-all duration-300 group delay-200">
+            <div class="w-16 h-16 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center mb-8 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Design-Build Consulting</h3>
+            <p class="text-slate-600 mb-8 leading-relaxed">Professional guidance through site selection, architectural drafting, and the rigorous Houston permitting process.</p>
+            <a href="tel:8328311656" class="text-amber-600 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
+              Consult With Us <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-slate-900 text-white relative overflow-hidden">
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-amber-600/10 rounded-full blur-3xl"></div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+          <div class="scroll-reveal">
+            <h2 class="text-4xl md:text-5xl font-bold mb-10 leading-tight">Houston's Standard in <span class="text-amber-500">Residential Excellence</span></h2>
+            <div class="space-y-10">
+              <div class="flex gap-6">
+                <div class="flex-shrink-0 w-14 h-14 bg-amber-600 text-white flex items-center justify-center rounded-2xl shadow-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold mb-3">Principal Involvement</h4>
+                  <p class="text-slate-400 leading-relaxed">Direct communication with our company principals ensures your vision is never lost in layers of management.</p>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div class="flex-shrink-0 w-14 h-14 bg-amber-600 text-white flex items-center justify-center rounded-2xl shadow-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold mb-3">On-Schedule Delivery</h4>
+                  <p class="text-slate-400 leading-relaxed">We respect your timeline. Our proprietary project management system keeps trades synchronized and material flows constant.</p>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div class="flex-shrink-0 w-14 h-14 bg-amber-600 text-white flex items-center justify-center rounded-2xl shadow-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold mb-3">Architectural Integrity</h4>
+                  <p class="text-slate-400 leading-relaxed">We honor the architect's intent, using premium materials and advanced structural techniques that stand the test of time.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative scroll-reveal">
+            <img src="https://images.unsplash.com/photo-1600607687940-4e524cb35797?auto=format&fit=crop&q=80&w=800" alt="Luxury Home Detail" class="rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-1000">
+            <div class="absolute -bottom-10 -left-10 bg-amber-600 p-10 rounded-2xl hidden lg:block shadow-2xl border-4 border-slate-900">
+              <div class="text-4xl font-black mb-2 italic">"Mastery"</div>
+              <p class="text-slate-100 font-medium">Defined by every detail.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-24 bg-white border-b border-slate-100">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16 scroll-reveal">
+          <h2 class="text-3xl md:text-5xl font-bold mb-4">Our Seamless Process</h2>
+          <p class="text-slate-600 text-lg">A clear, documented journey from initial concept to your final walkthrough.</p>
+        </div>
+        <div class="grid md:grid-cols-4 gap-12">
+          <div class="text-center scroll-reveal">
+            <div class="w-20 h-20 bg-slate-50 text-amber-600 rounded-full flex items-center justify-center font-bold text-3xl mx-auto mb-8 border-4 border-amber-600/10 shadow-inner">1</div>
+            <h4 class="text-xl font-bold mb-4">Vision & Discovery</h4>
+            <p class="text-slate-500 leading-relaxed">In-depth discussion of your goals, site parameters, and budget expectations.</p>
+          </div>
+          <div class="text-center scroll-reveal delay-100">
+            <div class="w-20 h-20 bg-slate-50 text-amber-600 rounded-full flex items-center justify-center font-bold text-3xl mx-auto mb-8 border-4 border-amber-600/10 shadow-inner">2</div>
+            <h4 class="text-xl font-bold mb-4">Planning & Pre-Con</h4>
+            <p class="text-slate-500 leading-relaxed">Finalizing architectural plans, material selections, and securing all permits.</p>
+          </div>
+          <div class="text-center scroll-reveal delay-200">
+            <div class="w-20 h-20 bg-slate-50 text-amber-600 rounded-full flex items-center justify-center font-bold text-3xl mx-auto mb-8 border-4 border-amber-600/10 shadow-inner">3</div>
+            <h4 class="text-xl font-bold mb-4">The Build Phase</h4>
+            <p class="text-slate-500 leading-relaxed">Precision construction with daily on-site supervision and regular client updates.</p>
+          </div>
+          <div class="text-center scroll-reveal delay-300">
+            <div class="w-20 h-20 bg-slate-50 text-amber-600 rounded-full flex items-center justify-center font-bold text-3xl mx-auto mb-8 border-4 border-amber-600/10 shadow-inner">4</div>
+            <h4 class="text-xl font-bold mb-4">Delivery & Beyond</h4>
+            <p class="text-slate-500 leading-relaxed">Comprehensive inspection, move-in coordination, and our luxury warranty support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Urgency Offer -->
+    <section class="bg-amber-50 py-20 border-y border-amber-100 relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(#d97706_1px,transparent_1px)] [background-size:20px_20px] opacity-10"></div>
+      <div class="container mx-auto px-4 text-center relative z-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-amber-950 mb-6">Currently Accepting 2024 Project Applications</h2>
+        <p class="text-amber-900/80 mb-10 max-w-2xl mx-auto text-lg">To maintain our uncompromising quality standards, we limit our concurrent build slots. Call today to schedule your feasibility study.</p>
+        <a href="tel:8328311656" class="inline-flex items-center gap-3 bg-amber-600 text-white px-10 py-5 rounded-full font-bold text-xl hover:bg-amber-700 transition-all shadow-xl btn-pulse">
+          Claim Your Consultation Slot <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-20 items-center">
+          <div class="lg:w-1/2 scroll-reveal">
+            <h2 class="text-3xl md:text-5xl font-bold mb-8">Service Focus: <span class="text-amber-600">Greater Houston</span></h2>
+            <p class="text-slate-600 mb-10 text-lg leading-relaxed">We focus our efforts on Houston's most premier neighborhoods, ensuring we are always nearby for oversight and rapid response.</p>
+            <div class="grid grid-cols-2 gap-6">
+              <div class="flex items-center gap-3 text-slate-800 font-semibold bg-slate-50 p-4 rounded-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                River Oaks
+              </div>
+              <div class="flex items-center gap-3 text-slate-800 font-semibold bg-slate-50 p-4 rounded-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Memorial
+              </div>
+              <div class="flex items-center gap-3 text-slate-800 font-semibold bg-slate-50 p-4 rounded-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                West University
+              </div>
+              <div class="flex items-center gap-3 text-slate-800 font-semibold bg-slate-50 p-4 rounded-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                The Woodlands
+              </div>
+              <div class="flex items-center gap-3 text-slate-800 font-semibold bg-slate-50 p-4 rounded-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Sugar Land
+              </div>
+              <div class="flex items-center gap-3 text-slate-800 font-semibold bg-slate-50 p-4 rounded-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                The Heights
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/2 scroll-reveal">
+            <div class="bg-slate-100 p-12 rounded-3xl border border-slate-200 shadow-inner text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-amber-600 mx-auto mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+              <h3 class="text-2xl font-bold mb-4 italic">"Luxury is Local"</h3>
+              <p class="text-slate-600 leading-relaxed italic">Our team lives and breathes Houston architecture. We understand the specific soil conditions, drainage requirements, and climate challenges unique to the Bayou City.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-slate-50">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <div class="text-center mb-16 scroll-reveal">
+          <h2 class="text-3xl md:text-5xl font-bold mb-4">Frequently Asked Questions</h2>
+          <p class="text-slate-600">Common inquiries regarding building and maintaining luxury properties in Texas.</p>
+        </div>
+        
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <div class="faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden scroll-reveal">
+            <button class="w-full flex justify-between items-center p-6 text-left hover:bg-slate-50 transition-colors">
+              <span class="text-lg font-bold">How long does a typical custom build take?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon w-6 h-6 text-amber-600 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-content">
+              <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-50">
+                Most custom luxury builds in the Houston area require 12 to 18 months, depending on the scale of the design and complexity of the site work.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 2 (Roofing Specific) -->
+          <div class="faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden scroll-reveal">
+            <button class="w-full flex justify-between items-center p-6 text-left hover:bg-slate-50 transition-colors">
+              <span class="text-lg font-bold">Do you handle roofing insurance claims and storm inspections?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon w-6 h-6 text-amber-600 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-content">
+              <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-50">
+                Yes. Our specialized roofing division provides free post-storm inspections. We work closely with insurance adjusters to ensure your high-value roofing materials are replaced with equal quality, maintaining your home's structural integrity.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 3 (Roofing Specific) -->
+          <div class="faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden scroll-reveal">
+            <button class="w-full flex justify-between items-center p-6 text-left hover:bg-slate-50 transition-colors">
+              <span class="text-lg font-bold">What are your project timelines for a full roof replacement?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon w-6 h-6 text-amber-600 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-content">
+              <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-50">
+                A standard high-end roof replacement typically takes 2-4 days. We prioritize speed without sacrificing craftsmanship to minimize disruption to your household.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 4 (Roofing Specific) -->
+          <div class="faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden scroll-reveal">
+            <button class="w-full flex justify-between items-center p-6 text-left hover:bg-slate-50 transition-colors">
+              <span class="text-lg font-bold">Are you licensed and insured for major residential structural work?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon w-6 h-6 text-amber-600 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-content">
+              <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-50">
+                Absolutely. Silvan Homes, Inc is fully bonded and carries comprehensive $2M+ general liability insurance along with full workers' compensation to protect our clients and our crews.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 5 -->
+          <div class="faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden scroll-reveal">
+            <button class="w-full flex justify-between items-center p-6 text-left hover:bg-slate-50 transition-colors">
+              <span class="text-lg font-bold">Do you provide free roofing inspections?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon w-6 h-6 text-amber-600 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-content">
+              <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-50">
+                Yes, we offer complimentary professional roofing and structural inspections for any property within our primary service areas in Houston.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="contact" class="py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="bg-amber-600 rounded-[3rem] p-10 md:p-20 text-white flex flex-col lg:flex-row items-center gap-16 scroll-reveal shadow-2xl">
+          <div class="flex-1">
+            <h2 class="text-4xl md:text-6xl font-bold mb-8 leading-tight">Ready to Build Your Legacy?</h2>
+            <p class="text-xl opacity-90 mb-12 max-w-xl leading-relaxed">
+              Don't leave your luxury investment to chance. Contact Houston's most meticulous builder for a private consultation today.
+            </p>
+            <div class="space-y-6">
+              <div class="flex items-center gap-4 text-2xl font-bold">
+                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <a href="tel:8328311656" class="hover:underline">(832) 831-1656</a>
+              </div>
+              <div class="flex items-center gap-4 text-xl">
+                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <span>3311 Richmond Ave. #218, Houston, TX 77098</span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white text-slate-900 p-10 rounded-3xl w-full lg:max-w-md shadow-2xl">
+            <h4 class="text-3xl font-bold mb-6">Inquire Now</h4>
+            <p class="text-slate-500 mb-8">Click the button below to initiate a direct call to our primary project manager.</p>
+            <a href="tel:8328311656" class="block w-full bg-amber-600 text-white text-center py-6 rounded-2xl font-bold text-2xl hover:bg-amber-700 transition-all active:scale-95 shadow-lg btn-pulse">
+              Call Now
+            </a>
+            <div class="mt-8 flex items-center justify-center gap-2 text-slate-400 text-sm font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              Secure Local Connection
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-500 py-20 border-t border-slate-800">
+      <div class="container mx-auto px-4 text-center">
+        <div class="text-3xl font-bold text-white mb-8">
+          SILVAN <span class="text-amber-600">HOMES</span>, INC
+        </div>
+        <p class="max-w-xl mx-auto mb-12 text-lg">
+          Excellence in custom home building since 2004. Dedicated to the architectural legacy of Houston, Texas.
+        </p>
+        <div class="flex flex-wrap justify-center gap-10 mb-12 text-white font-bold tracking-wide">
+          <a href="#" class="hover:text-amber-500 transition-colors">HOME</a>
+          <a href="#services" class="hover:text-amber-500 transition-colors">SERVICES</a>
+          <a href="#contact" class="hover:text-amber-500 transition-colors">CONTACT</a>
+        </div>
+        <div class="h-px w-full bg-slate-800 mb-12"></div>
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
+          <p>© 2024 Silvan Homes, Inc. All rights reserved.</p>
+          <div class="flex gap-8">
+            <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-[60] p-4 bg-white/90 backdrop-blur-lg border-t border-slate-200">
+      <a href="tel:8328311656" class="flex items-center justify-center gap-4 bg-amber-600 text-white py-5 rounded-2xl font-bold text-xl shadow-2xl btn-pulse">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        CALL NOW
+      </a>
+    </div>
+
+    <!-- Vanilla JS for Interactivity -->
+    <script>
+      // Scroll Effects
+      const navbar = document.getElementById('navbar');
+      const navLogo = document.getElementById('nav-logo');
+      
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add('bg-white', 'shadow-md', 'py-2');
+          navbar.classList.remove('bg-transparent', 'py-4');
+          navLogo.classList.add('text-slate-900');
+          navLogo.classList.remove('text-white');
+        } else {
+          navbar.classList.remove('bg-white', 'shadow-md', 'py-2');
+          navbar.classList.add('bg-transparent', 'py-4');
+          navLogo.classList.remove('text-slate-900');
+          navLogo.classList.add('text-white');
+        }
+      });
+
+      // Intersection Observer for Scroll Reveal
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.scroll-reveal').forEach(el => revealObserver.observe(el));
+
+      // FAQ Accordion
+      document.querySelectorAll('.faq-item button').forEach(button => {
+        button.addEventListener('click', () => {
+          const faqItem = button.parentElement;
+          const isActive = faqItem.classList.contains('active');
+          
+          // Close others
+          document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+          
+          // Toggle current
+          if (!isActive) {
+            faqItem.classList.add('active');
+          }
+        });
+      });
+    </script>
+    
+    <!-- Empty index.tsx replacement script to satisfy platform import mapping if needed -->
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
